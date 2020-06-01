@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:         CSED101   
 tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
+description: '하고 싶은게 많은 학부생, 시작할 때 그 마음 그대로'
 url:              https://deokhk.github.io
 baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
