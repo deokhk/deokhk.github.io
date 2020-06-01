@@ -4,8 +4,9 @@ highlighter:      rouge
 
 # Setup
 title:         CSED101   
-tagline:          'A Jekyll theme'
-description: '하고 싶은게 많은 학부생, 시작할 때 그 마음 그대로'
+tagline:          생각 저장소
+description: '하고 싶은게 많은 학부생,
+	시작할 때 그 마음 그대로'
 url:              https://deokhk.github.io
 baseurl:          ''
                   # the optional subpath of your site, e.g. "/blog"
@@ -16,12 +17,13 @@ baseurl:          ''
 
 author:
   name:           'DeokHyung Kang'
+  email: "kangduk25@gmail.com"
 
 paginate:         5
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 disqus:
-  shortname: deokhk-github-io.disqus.com
+  shortname: deokhk-github-io
 
 plugins:
   - jekyll-feed
