@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Hello Hydeout
 excerpt_separator:  <!--more-->
 ---
