@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="https://gmpg.org/xfn/11" rel="profile" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+  <title>
+    
+      나만의 Pytorch Tutorial - 1 &middot; Be water
+    
+  </title>
+
+  
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface" />
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+
+  <!-- Additional head bits without overriding original head -->
+</head>
+
+
+  <body class="post">
+
+    <div id="sidebar">
+  <header>
+    <div class="site-title">
+      <a href="/">
+        
+          <span class="back-arrow icon"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0h24v24H0z" fill="none"/>
+  <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+</svg></span>
+        
+        Be water
+      </a>
+    </div>
+    <p class="lead"></p>
+  </header>
+  <nav id="sidebar-nav-links">
+  
+    <a class="home-link "
+        href="/">Home</a>
+  
+  
+
+  
+
+  
+
+
+  
+
+  
+    
+      <a class="page-link "
+          href="/about.html">About</a>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+      <a class="category-link "
+          href="/category/edge-case.html">Edge Case</a>
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+      <a class="category-link "
+          href="/category/markup.html">Markup</a>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+  <!-- Optional additional links to insert in sidebar nav -->
+</nav>
+
+
+  
+
+  <nav id="sidebar-icon-links">
+  
+
+  <a id="subscribe-link"
+     class="icon" title="Subscribe" aria-label="Subscribe"
+     href="/feed.xml">
+    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <circle cx="6.18" cy="17.82" r="2.18"/>
+    <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+</svg>
+  </a>
+
+  
+  
+  
+  
+
+  
+    <a id="tags-link"
+       class="icon"
+       title="Tags" aria-label="Tags"
+       href="/tags.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"/>
+</svg>
+    </a>
+  
+
+  
+    <a id="search-link"
+       class="icon"
+       title="Search" aria-label="Search"
+       href="/search.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+    </a>
+  
+
+  <!-- Optional additional links to insert for icons links -->
+</nav>
+
+  <p>
+  &copy; 2020.
+  <a href="/LICENSE.md">MIT License.</a>
+</p>
+
+</div>
+
+    <main class="container">
+      <header>
+  <h1 class="post-title">나만의 Pytorch Tutorial - 1</h1>
+</header>
+<div class="content">
+  <div class="post-meta">
+  <span class="post-date">09 Jul 2020</span>
+  <span class="post-categories">
+    
+  </span>
+</div>
+
+
+  <div class="post-body">
+    <h2 id="시작하게-된-이유">시작하게 된 이유</h2>
+<p>이번 여름방학 중 학부생 연구참여를 수행하게 되었다. 자연어처리에 관심이 있는 나는 해당 분야의 Lab에서 연구를 진행하게 되었다.  이번 여름방학의 연구 목표는 다음과 같다.</p>
+
+<blockquote>
+  <p>BERT 기반의 QA task 논문과 최신 코드를 읽고 내 프로젝트에 적용해 볼 수 있고, 간단한 Network는 Pytorch로 구현이 가능한 정도의 Level.</p>
+
+</blockquote>
+
+<p>나는 머신러닝 및 자연어처리 분야에 대해 몇몇 수업을 들었기 때문에 이론적인 지식은 어느 정도 가지고 있지만, 딥러닝 프레임워크에 대해서는 별로 경험이 없다. 이전에 과제연구를 수행하는 과정에서 Keras를 사용해본것만이 전부이다. 
+ 이에 이번 여름방학 중 Pytorch를 공부하기로 하였고 그 과정에서 내가 느끼기에 중요하다고 판단되는 것을 초심자의 마음으로 이곳에 작성하고자 한다. 해당 문서는 <a href="https://tutorials.pytorch.kr/beginner/blitz/tensor_tutorial.html#sphx-glr-beginner-blitz-tensor-tutorial-py">Pytorch 공식 튜토리얼</a>을 기반으로 작성되었다.</p>
+
+<h2 id="pytorch에서-tensor란-무엇인가">Pytorch에서 Tensor란 무엇인가</h2>
+
+<p>Pytorch에서의 Tensor란 Numpy에서의 ndarray와 유사하다. 이러한 Tensor는 Numpy 배열로 변환하거나 그 반대도 가능하다. 차이점은 Tensor는 GPU를 이용한 연산 가속이 가능하다는 점이다. 
+우선 필요한 Module을 import하자.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from __future__ import print_function
+import torch
+</code></pre></div></div>
+
+<p>우선 Data로부터 Tensor를 만드는 방법부터 알아보자. 우리는 아래의 원소들로 채워진 2X2 행렬을 만들 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x = torch.tensor([[1, 2, 3],[4, 5, 6]])
+print(x)
+</code></pre></div></div>
+
+<p>결과:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tensor([[1, 2, 3], 
+        [4, 5, 6]])
+</code></pre></div></div>
+
+<p>이러한 행렬의 크기는 다음과 같은 방법으로 구할 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print(x.size())
+</code></pre></div></div>
+
+<p>결과:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>torch.Size([2, 3])
+</code></pre></div></div>
+
+<p>우리는 size()를 통해 해당 matrix가 2X3 matrix임을 확인할 수 있다. 그렇다면 특정 size의 matrix는 어떻게 생성할 수 있을까?</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#초기화되지 않은 2x3 행렬 생성
+x = torch.empty(2,3)
+print(x)
+
+#무작위 값으로 초기화된 2x3 행렬 생성
+y = torch.randn(2,3)
+print(y)
+
+#0으로 초기화된 2x3 행렬 생성
+z = torch.zeros(2,3)
+print(z)
+
+#0으로 초기화되었고 data type이 long인 2x3 행렬 생성
+l = torch.zeros(2,3, dtype=torch.long)
+print(l)
+</code></pre></div></div>
+
+<p>결과:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tensor([[4.9484e-36, 0.0000e+00, 1.6675e-43],    
+        [5.6052e-44, 1.6816e-43, 6.1657e-44]]) 
+tensor([[ 0.9699, 1.1269, 0.6148], 
+        [ 1.0897, -0.4911, -0.3662]]) 
+tensor([[0., 0., 0.], 
+        [0., 0., 0.]]) 
+tensor([[0, 0, 0], 
+        [0, 0, 0]])
+</code></pre></div></div>
+
+<h2 id="tensor와-관련된-연산">Tensor와 관련된 연산</h2>
+
+<p>행렬 간의 연산을 하다 보면 연산 대상 행렬간의 차원을 맞추어 줘야 되는 경우가 종종 발생한다. flattening을 수행해야 되는 경우도 있다. 
+tensor의 모양(shape)이나 크기(size)를 변환시키고 싶은 경우에는 <strong>view()</strong> 를 사용한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x = torch.randn(6, 6)
+y = x.view(36)
+z = x.view(-1, 12) # -1은 다른 차원들을 사용하여 유추한다.
+
+print(x.size())
+print(y.size())
+print(z.size())
+</code></pre></div></div>
+
+<p>결과:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>torch.Size([6, 6]) 
+torch.Size([36]) 
+torch.Size([3, 12])
+</code></pre></div></div>
+
+<p>위에서 말했던 대로 Pytorch의 Tensor는 Numpy 배열과 서로 변환이 가능하다. 또한 cpu상에 존재하는 pytorch tensor와 numpy 배열은 저장 공간을 공유한다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x = torch.ones(4, 4)
+y = x.numpy() # x tensor를 numpy 배열로 변환
+z = torch.from_numpy(y) # y numpy 배열을 tensor로 변환
+
+print(x)
+print(y)
+print(z)
+</code></pre></div></div>
+
+<p>결과:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tensor([[1., 1., 1., 1.], 
+        [1., 1., 1., 1.], 
+        [1., 1., 1., 1.], 
+        [1., 1., 1., 1.]]) 
+[[1. 1. 1. 1.] 
+[1. 1. 1. 1.] 
+[1. 1. 1. 1.] 
+[1. 1. 1. 1.]] 
+tensor([[1., 1., 1., 1.], 
+       [1., 1., 1., 1.], 
+       [1., 1., 1., 1.], 
+       [1., 1., 1., 1.]])
+</code></pre></div></div>
+
+<p>아래와 같은 연산을 통해 cpu상의 pytorch tensor와 numpy배열은 저장공간을 공유한다는 것을 확인할 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x.add_(1) # x의 모든 원소에 1을 더함
+
+print(x)
+print(y)
+print(z)
+</code></pre></div></div>
+
+<p>결과:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tensor([[2., 2., 2., 2.], 
+        [2., 2., 2., 2.], 
+        [2., 2., 2., 2.], 
+        [2., 2., 2., 2.]]) 
+[[2. 2. 2. 2.] 
+ [2. 2. 2. 2.] 
+ [2. 2. 2. 2.] 
+ [2. 2. 2. 2.]] 
+tensor([[2., 2., 2., 2.], 
+        [2., 2., 2., 2.], 
+        [2., 2., 2., 2.], 
+        [2., 2., 2., 2.]])
+</code></pre></div></div>
+
+<h2 id="tensor를-gpu로-옮기기">Tensor를 GPU로 옮기기</h2>
+
+<p>Tensor의 장점은 GPU를 이용하여 연산가속을 할 수 있다는 점이다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">is_available</span><span class="p">():</span>
+	<span class="n">y</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">device</span><span class="o">=</span><span class="s">"cuda"</span><span class="p">)</span> <span class="c1"># GPU상에 직접적으로 Tensor 생성하기
+</span>	<span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+	<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">.</span><span class="n">to</span><span class="p">(</span><span class="s">"cuda"</span><span class="p">)</span> <span class="c1"># CPU상의 Tensor를 GPU로 옮기기
+</span>	<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+	
+	<span class="n">z</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">y</span>	
+	<span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>결과:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tensor([[1., 1.], 
+        [1., 1.]], device='cuda:0') 
+tensor([[0., 0.], 
+        [0., 0.]], device='cuda:0') 
+tensor([[2., 2.], 
+        [2., 2.]], device='cuda:0')
+</code></pre></div></div>
+
+
+    
+
+
+
+<div class="post-tags">
+  
+</div>
+  </div>
+
+  
+  <section class="comments">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+     *  PLATFORM OR CMS.
+     *  
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+     *  https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        // Replace PAGE_URL with your page's canonical URL variable
+        this.page.url = PAGE_URL;  
+        
+        // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.identifier = PAGE_IDENTIFIER; 
+    };
+    */
+    
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        
+        // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        s.src = 'https://deokhk-github-io.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.
+    </a>
+</noscript>
+
+
+  </section>
+
+
+  <section class="related">
+  <h2>Related Posts</h2>
+  <ul class="posts-list">
+    
+  </ul>
+</section>
+
+</div>
+
+    </main>
+
+    <!-- Optional footer content -->
+
+  </body>
+</html>
