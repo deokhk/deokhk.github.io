@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-02-20
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+"Denoising Table-Text Retrieval for Semantic Parsing," has been accepted to LREC-COLING 2024.
