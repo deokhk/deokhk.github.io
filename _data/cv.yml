@@ -1,97 +1,114 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+# - title: General Information
+#   type: map
+#   contents:
+#     - name: Full Name
+#       value: Albert Einstein
+#     - name: Date of Birth
+#       value: 14th March 1879
+#     - name: Languages
+#       value: English, German
+
+# - title: Education
+#   type: time_table
+#   contents:
+#     - title: PhD in Artifical Intelligence
+#       institution: POSTECH, South Korea
+#       year: 2021 - Present
+#       description:
+#         - Description 1.
+#         - Description 2.
+#         - title: Description 3.
+#           contents:
+#             - Sub-description 1.
+#             - Sub-description 2.
+#     - title: Federal teaching diploma
+#       institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
+#       year: 1900
+#       description:
+#         - Description 1.
+#         - Description 2.
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: PhD in Artifical Intelligence
+      institution: POSTECH, South Korea
+      year: 2021 - Present
+    - title: Visiting Scholar
+      institution: Carnegie Mellon University, USA
+      year: 2022.1 - 2022.7
+    - title: B.S.E, Computer Science and Engineering
+      institution: POSTECH, South Korea
+      year: 2017 - 2021
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Graduate Student Researcher
+      institution: POSTECH NLP Lab, South Korea
+      year: 2021.9 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Working on enhancing multilingual semantic parsing and reasoning capabilities of language models
+    - title: Research Intern
+      institution: POSTECH DB Lab, South Korea
+      year: 2020.6 - 2020.8
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Research on NL2SQL Models
+    - title: Research Intern
+      institution: POSTECH KLE Lab, South Korea
+      year: 2020.6 - 2020.8
       description:
+        - Developed a Multi-hop QA system with improved question answering performance
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Engineering Experience
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Software Development Engineering Intern
+      institution: SK Telecom
+      year: 2019.7 - 2019.8 
+      description: 
+      - Developed a robust log processing pipeline leveraging the ELK stack for efficient data ingestion, storage, and visualization.
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant
+      institution: POSTECH, South Korea
+      year: 2023.9 - 2023.12
+      description: "Teaching Assistant for the Operating Systems course (CSED312)"
+    - title: Teaching Assistant
+      institution: POSTECH, South Korea
+      year: 2022.09 - 2022.12
+      description: "Teaching Assistant for the Statistical Natural Language Processing course (CSED523)"
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2020
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Certificate of Academic Excellence, POSTECH, South Korea
+    - year: 2018
       items:
-        - Max Planck Medal
+        - Global Leadership Program Scholarship, Dept of Computer Science and Engineering, POSTECH, South Korea
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items:
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
+- title: Skills
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Languages:</u> Korean (Native), English (Fluent)
+    - <u>Libraries/Frameworks:</u> PyTorch, Transformers
+    
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
