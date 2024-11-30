@@ -251,7 +251,6 @@ exclude:
   - vendor
   - _pages/teaching.md
   - _pages/blog.md
-  - _pages/repositories.md
   - _pages/people.md
 keep_files:
   - CNAME
