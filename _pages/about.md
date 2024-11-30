@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Ph.D Student. <a href='https://nlp.postech.ac.kr'>POSTECH</a>
 
 profile:
   align: right
