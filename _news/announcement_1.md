@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-"Denoising Table-Text Retrieval for Semantic Parsing," has been accepted to LREC-COLING 2024.
+"Denoising Table-Text Retrieval for Open-Domain Question Answering," has been accepted to LREC-COLING 2024.
