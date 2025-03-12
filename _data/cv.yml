@@ -91,17 +91,11 @@
       items:
         - Global Leadership Program Scholarship, Dept of Computer Science and Engineering, POSTECH, South Korea
 
-# - title: Academic Interests
-#   type: nested_list
-#   contents:
-#     - title: Topic 1.
-#       items:
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
+- title: Services
+  type: list
+  contents:
+    - <u>Reviewer:</u> ACL Rolling Review (ARR)
+
 - title: Skills
   type: list
   contents:
