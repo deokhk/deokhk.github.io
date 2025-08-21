@@ -1,17 +1,82 @@
 ---
 ---
 
-@misc{kang2025retrievalaugmentedfinetuningpreferenceoptimization,
-      title={Retrieval-Augmented Fine-Tuning With Preference Optimization For Visual Program Generation}, 
-      author={Deokhyung Kang and Jeonghun Cho and Yejin Jeon and Sunbin Jang and Minsub Lee and Jawoon Cho and Gary Geunbae Lee},
+
+@misc{cho2025selfcorrectingcodegenerationusing,
+      title={Self-Correcting Code Generation Using Small Language Models}, 
+      author={Jeonghun Cho and Deokhyung Kang and Hyounghun Kim and Gary Geunbae Lee},
       year={2025},
-      eprint={2502.16529},
+      eprint={2505.23060},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.16529}, 
-      abbr={ArXiv}
+      url={https://arxiv.org/abs/2505.23060}, 
+      abbr={EMNLP Findings 2025}
 }
 
+
+@misc{kim2025milqbenchmarkingirmodels,
+      title={MiLQ: Benchmarking IR Models for Bilingual Web Search with Mixed Language Queries}, 
+      author={Jonghwi Kim and Deokhyung Kang and Seonjeong Hwang and Yunsu Kim and Jungseul Ok and Gary Lee},
+      year={2025},
+      eprint={2505.16631},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2505.16631}, 
+      abbr={EMNLP 2025},
+      selected={true}
+}
+
+@inproceedings{kang-etal-2025-retrieval,
+    title = "Retrieval-Augmented Fine-Tuning With Preference Optimization For Visual Program Generation",
+    author = "Kang, Deokhyung  and
+      Cho, Jeonghun  and
+      Jeon, Yejin  and
+      Jang, Sunbin  and
+      Lee, Minsub  and
+      Cho, Jawoon  and
+      Lee, Gary",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.1106/",
+    doi = "10.18653/v1/2025.acl-long.1106",
+    pages = "22667--22686",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Visual programming languages (VPLs) allow users to create programs through graphical interfaces, which results in easier accessibility and their widespread usage in various domains. To further enhance this accessibility, recent research has focused on generating VPL code from user instructions using large language models (LLMs). Specifically, by employing prompting-based methods, these studies have shown promising results. Nevertheless, such approaches can be less effective for industrial VPLs such as Ladder Diagram (LD). LD is a pivotal language used in industrial automation processes and involves extensive domain-specific configurations, which are difficult to capture in a single prompt. In this work, we demonstrate that training-based methods outperform prompting-based methods for LD generation accuracy, even with smaller backbone models. Building on these findings, we propose a two-stage training strategy to further enhance VPL generation. First, we employ retrieval-augmented fine-tuning to leverage the repetitive use of subroutines commonly seen in industrial VPLs. Second, we apply direct preference optimization (DPO) to further guide the model toward accurate outputs, using systematically generated preference pairs through graph editing operations. Extensive experiments on real-world LD data demonstrate that our approach improves program-level accuracy by over 10{\%} compared to supervised fine-tuning, which highlights its potential to advance industrial automation.",
+    abbr={ACL 2025},
+    selected={true}
+}
+
+@inproceedings{suh-etal-2025-enstom,
+    title = "{E}n{ST}o{M}: Enhancing Dialogue Systems with Entropy-Scaled Steering Vectors for Topic Maintenance",
+    author = "Suh, Heejae  and
+      Jeon, Yejin  and
+      Kang, Deokhyung  and
+      Park, Taehee  and
+      Min, Yejin  and
+      Lee, Gary",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.1264/",
+    doi = "10.18653/v1/2025.findings-acl.1264",
+    pages = "24615--24631",
+    ISBN = "979-8-89176-256-5",
+    abbr={ACL Findings 2025},
+    abstract = "Small large language models (sLLMs) offer the advantage of being lightweight and efficient, which makes them suitable for resource-constrained environments. However, sLLMs often struggle to maintain topic consistency in task-oriented dialogue systems, which is critical for scenarios such as service chatbots. Specifically, it is important to ensure that the model denies off-topic or malicious inputs and adheres to its intended functionality so as to prevent potential misuse and uphold reliability. Towards this, existing activation engineering approaches have been proposed to manipulate internal activations during inference. While these methods are effective in certain scenarios, our preliminary experiments reveal their limitations in ensuring topic adherence. Therefore, to address this, we propose a novel approach termed \textbf{En}tropy-scaled \textbf{S}teering vectors for \textbf{To}pic \textbf{M}aintenance (EnSToM). EnSToM dynamically adjusts the steering intensity based on input uncertainty, which allows the model to handle off-topic distractors effectively while preserving on-topic accuracy. Our experiments demonstrate that EnSToM achieves significant performance gain with a relatively small data size compared to fine-tuning approaches. By improving topic adherence without compromising efficiency, our approach provides a robust solution for enhancing sLLM-based dialogue systems."
+}
 
 @inproceedings{kang-etal-2024-cross,
     title = "Cross-lingual Back-Parsing: Utterance Synthesis from Meaning Representation for Zero-Resource Semantic Parsing",
@@ -30,7 +95,7 @@
     url = "https://aclanthology.org/2024.emnlp-main.792",
     doi = "10.18653/v1/2024.emnlp-main.792",
     pages = "14303--14317",
-    abbr={EMNLP},
+    abbr={EMNLP 2024},
     selected={true},
     abstract = "Recent efforts have aimed to utilize multilingual pretrained language models (mPLMs) to extend semantic parsing (SP) across multiple languages without requiring extensive annotations. However, achieving zero-shot cross-lingual transfer for SP remains challenging, leading to a performance gap between source and target languages. In this study, we propose Cross-Lingual Back-Parsing (CBP), a novel data augmentation methodology designed to enhance cross-lingual transfer for SP. Leveraging the representation geometry of the mPLMs, CBP synthesizes target language utterances from source meaning representations. Our methodology effectively performs cross-lingual data augmentation in challenging zero-resource settings, by utilizing only labeled data in the source language and monolingual corpora. Extensive experiments on two cross-language SP benchmarks (Mschema2QA and Xspider) demonstrate that CBP brings substantial gains in the target language. Further analysis of the synthesized utterances shows that our method successfully generates target language utterances with high slot value alignment rates while preserving semantic integrity. Our codes and data are publicly available at https://github.com/deokhk/CBP.",
 }
@@ -47,7 +112,7 @@
 }
 
 @inproceedings{kang-etal-2024-denoising,
-    abbr="LREC-COLING",
+    abbr="LREC-COLING 2024",
     title = "Denoising Table-Text Retrieval for Open-Domain Question Answering",
     author = "Kang, Deokhyung  and
       Jung, Baikjin  and
