@@ -65,9 +65,9 @@
   contents:
     - title: Software Development Engineering Intern
       institution: SK Telecom
-      year: 2019.7 - 2019.8 
-      description: 
-      - Developed a robust log processing pipeline leveraging the ELK stack for efficient data ingestion, storage, and visualization.
+      year: 2019.7 - 2019.8
+      description:
+        - Developed a robust log processing pipeline leveraging the ELK stack for efficient data ingestion, storage, and visualization.
 
 - title: Teaching Experience
   type: time_table
@@ -101,7 +101,6 @@
   contents:
     - <u>Languages:</u> Korean (Native), English (Fluent)
     - <u>Libraries/Frameworks:</u> PyTorch, Transformers
-    
 # - title: Other Interests
 #   type: list
 #   contents:
