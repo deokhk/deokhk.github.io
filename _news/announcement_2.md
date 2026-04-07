@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, "Cross-lingual Back-Parsing: Utterance Synthesis from Meaning Representation for Zero-Resource Semantic Parsing," has been accepted at EMNLP 2024—my first EMNLP paper of my PhD! 
+Our paper, "Cross-lingual Back-Parsing: Utterance Synthesis from Meaning Representation for Zero-Resource Semantic Parsing," has been accepted at EMNLP 2024—my first EMNLP paper of my PhD!
