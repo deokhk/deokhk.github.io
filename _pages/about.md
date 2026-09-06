@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D Student. <a href='https://nlp.postech.ac.kr'>POSTECH</a>
+subtitle: Postdoctoral Researcher. <a href='https://nlp.postech.ac.kr'>POSTECH</a>
 
 profile:
   align: right
@@ -14,6 +14,6 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D. student in the Natural Language Processing (NLP) group at POSTECH, South Korea, advised by Prof. Gary Geunbae Lee. My primary research interest lies in multilingual language processing, with a special focus on reasoning — particularly on building language models that can reason robustly across languages. More broadly, I am also interested in multilingual NLP, information retrieval, and code generation.
+I am a Postdoctoral Researcher at POSTECH, affiliated with the Safe AI Research Center at UNIST through the InnoCORE program, where I work with Prof. Sangdon Park. My research interests lie broadly in Agentic AI and Multilingual NLP, with a particular focus on building language models and AI agents that can reason, adapt, and operate effectively in challenging real-world environments.
 
-Previously, I completed my B.S.E. in Computer Science and Engineering at POSTECH.
+I received my Ph.D. in Artificial Intelligence from POSTECH, advised by Prof. Gary Geunbae Lee. During my Ph.D., my research focused primarily on multilingual language processing and reasoning, particularly on developing language models that can reason robustly across languages.
